@@ -10,21 +10,21 @@ import javax.persistence.Id;
 public class SokobanSolution {
 	@Id
 	@Column(name="solutionId")
-	private int solutionId;
+	private String solutionId;
 	@Column(name = "solution")
 	private String solution;
 
-	public SokobanSolution(int solutionId, String solution) {
+	public SokobanSolution(String solutionId, String solution) {
 		super();
 		this.solutionId = solutionId;
 		this.solution = solution;
 	}
 
-	public int getSolutionId() {
+	public String getSolutionId() {
 		return solutionId;
 	}
 
-	public void setSolutionId(int solutionId) {
+	public void setSolutionId(String solutionId) {
 		this.solutionId = solutionId;
 	}
 

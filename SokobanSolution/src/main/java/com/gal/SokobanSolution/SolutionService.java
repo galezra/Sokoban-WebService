@@ -45,14 +45,14 @@ public class SolutionService {
 	}
 
 	
-	/*
+	
 	@POST
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-	public void addSolution(@FormParam("solutionId") int solutionId, @FormParam("solution") String solution) {
+	public void addSolution(@FormParam("solutionId") String  solutionId, @FormParam("solution") String solution) {
 		SokobanSolution sol = new SokobanSolution(solutionId,solution);
 		solutionManger.addSolution(sol);
 	}
-	*/
+	
 	
 	/**
 	 * update the data base with the solution
@@ -61,15 +61,15 @@ public class SolutionService {
 	 * @return
 	 */
 	
-	
+	/*
 	@GET
 	@Path("/add/{solutionId}/{solution}")
-    public Response addSolution(@PathParam("solutionId")int solutionId,@PathParam("solution") String solution) {
+    public Response addSolution(@PathParam("solutionId")String solutionId,@PathParam("solution") String solution) {
 		System.out.println(solutionId);
 		System.out.println(solution);
 		SokobanSolution sol = new SokobanSolution(solutionId, solution);
 		solutionManger.addSolution(sol);
       return Response.status(200).build();
-    }
+    }*/
 
 }

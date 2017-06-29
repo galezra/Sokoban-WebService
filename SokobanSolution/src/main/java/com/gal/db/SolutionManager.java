@@ -55,7 +55,7 @@ public class SolutionManager {
 			if (session != null)
 				session.close();
 		}
-		return null;
+		return "block";
 	}
 
 	public boolean isSolutionExist(String solutionId) {
